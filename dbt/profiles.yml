@@ -1,0 +1,7 @@
+banking_retention:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: banking.duckdb
+      threads: 4

@@ -1,0 +1,76 @@
+{
+  "data": {
+    "customers": 5000,
+    "panel_rows": 85000,
+    "treatment_rate": 0.3754
+  },
+  "psm": {
+    "att_retention": 0.03735325506937033,
+    "ci_95": [
+      0.009071504802561366,
+      0.06937033084311633
+    ],
+    "matched_treated": 1874
+  },
+  "did": {
+    "weekly_active_days_lift": 0.4286869526242847,
+    "standard_error": 0.008483135146266394,
+    "ci_95": [
+      0.41206031326161663,
+      0.44531359198695275
+    ],
+    "p_value": 0.0
+  },
+  "hte": {
+    "highest_value_group": {
+      "engagement_band": "low",
+      "tenure_band": "new",
+      "customers": 402,
+      "estimated_effect": 0.1703899738282747,
+      "standard_error": 0.050577184067249516,
+      "ci_low": 0.07125869305646565,
+      "ci_high": 0.26952125460008375
+    },
+    "lowest_value_group": {
+      "engagement_band": "high",
+      "tenure_band": "long_tenure",
+      "customers": 60,
+      "estimated_effect": -0.14796670037673337,
+      "standard_error": 0.1254927010457199,
+      "ci_low": -0.3939323944263444,
+      "ci_high": 0.09799899367287765
+    }
+  },
+  "clustering": {
+    "n_segments": 4,
+    "silhouette_score": 0.3606111031691694
+  },
+  "churn_prediction": {
+    "roc_auc": 0.7237493579866461,
+    "average_precision": 0.7310534458746837,
+    "brier_score": 0.21191850304603577,
+    "test_customers": 1250,
+    "churn_rate_test": 0.528
+  },
+  "targeting_comparison": {
+    "highest_predicted_churn": {
+      "customers": 250,
+      "avg_predicted_churn": 0.8119202852249146,
+      "avg_estimated_uplift": 0.04801356993286892,
+      "observed_churn_rate": 0.78
+    },
+    "highest_estimated_uplift": {
+      "customers": 250,
+      "avg_predicted_churn": 0.5264853239059448,
+      "avg_estimated_uplift": 0.18397639942620347,
+      "observed_churn_rate": 0.564
+    },
+    "random_20_percent": {
+      "customers": 250,
+      "avg_predicted_churn": 0.5440225601196289,
+      "avg_estimated_uplift": 0.0529346914907914,
+      "observed_churn_rate": 0.544
+    }
+  },
+  "interpretation_guardrail": "The XGBoost model predicts churn risk; it does not identify intervention effects."
+}

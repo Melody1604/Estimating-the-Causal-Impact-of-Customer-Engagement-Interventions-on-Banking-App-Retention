@@ -1,0 +1,13 @@
+feature,importance
+digital_transaction_share,0.18682733
+pre_avg_active_days,0.14737181
+support_tickets_90d,0.11559521
+missed_payment_flag,0.09609927
+prior_nps,0.09064395
+tenure_months,0.0732308
+baseline_sessions_30d,0.06561239
+annual_income,0.058651753
+metro_flag,0.04504628
+avg_balance,0.04396985
+age,0.03919512
+product_count,0.03775629

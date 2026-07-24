@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: treated
+        tests:
+          - accepted_values:
+              values: [0, 1]
+      - name: retained_30d
+        tests:
+          - accepted_values:
+              values: [0, 1]
+  - name: stg_weekly_activity
+    columns:
+      - name: customer_id
+        tests: [not_null]
+      - name: week
+        tests: [not_null]
+  - name: customer_analysis_base
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]

@@ -1,0 +1,15 @@
+name: banking_retention
+version: '1.0.0'
+config-version: 2
+profile: banking_retention
+model-paths: ["models"]
+seed-paths: ["seeds"]
+models:
+  banking_retention:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+seeds:
+  banking_retention:
+    +quote_columns: false

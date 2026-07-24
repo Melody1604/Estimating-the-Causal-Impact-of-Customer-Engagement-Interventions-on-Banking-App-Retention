@@ -1,0 +1,4 @@
+strategy,customers,avg_predicted_churn,avg_estimated_uplift,observed_churn_rate
+highest_predicted_churn,250,0.8119203,0.04801356993286892,0.78
+highest_estimated_uplift,250,0.5264853,0.18397639942620347,0.564
+random_20_percent,250,0.54402256,0.0529346914907914,0.544

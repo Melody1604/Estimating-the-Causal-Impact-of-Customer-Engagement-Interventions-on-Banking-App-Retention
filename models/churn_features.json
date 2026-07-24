@@ -1,0 +1,14 @@
+[
+  "age",
+  "tenure_months",
+  "annual_income",
+  "avg_balance",
+  "baseline_sessions_30d",
+  "digital_transaction_share",
+  "support_tickets_90d",
+  "product_count",
+  "prior_nps",
+  "missed_payment_flag",
+  "metro_flag",
+  "pre_avg_active_days"
+]
